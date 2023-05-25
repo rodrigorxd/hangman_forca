@@ -30,13 +30,9 @@ with open("br-sem-acentos.txt", "r", encoding="UTF-8") as arquivo:
 
     palavra_sorteada = nova_lista[sorteio]
 
-    print(palavra_sorteada)
-
     #preenchendo a palavra_tentativa com "-" para cada letra que a palavra sorteada tiver
     for i in range(len(palavra_sorteada)):
         palavra_tentativa.append("-")
-
-    print(palavra_sorteada == palavra_sorteada)
 
     #Loop do jogo em si
     while acerto != len(palavra_sorteada) and (chances > 0):
